@@ -44,7 +44,7 @@ $popup_bg_color = get_option( 'jetFeaturePanels_settings' )["jetFeaturePanels_Po
 }
 
 .jet-feature-panel {
-    overflow-y:auto;
+    overflow-y:none;
     margin:2%;
     width:28%;
     display:inline-block;
