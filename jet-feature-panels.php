@@ -242,7 +242,7 @@ function jet_feature_panels( $atts, $content ){
     $_SESSION['use_wpautop'] = false;   
     $queryParams = array(); 
     $post_id = false;
-    if ($_GET['post_id']) {
+    if (isset($_GET['post_id'])) {
         $post_id = $_GET['post_id'];
     }
     if (!!$post_id) {
@@ -296,8 +296,7 @@ function jet_feature_panels( $atts, $content ){
 				$target = " target='_blank'";
 			}
             $output .= "<div class=\"jet-feature-panel\">
-    <a".$href.$target."><img src=\"".$imageurl."\"></a><p></p>
-    <div class=\"content bottom\">
+    <a".$href.$target."><img src=\"".$imageurl."\"></a><div class=\"content bottom\">
         <div class=\"content-bg\"></div>
         <div class=\"title\"><a".$href.$target.">".$shorttext."</a></div>
         <div class=\"text\"><a".$href.$target.">".$mediumtext."</a></div>
